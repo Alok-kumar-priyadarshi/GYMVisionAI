@@ -43,22 +43,9 @@ pip install -r requirements-dev.txt
 cp .env.example .env
 ```
 
-Open `.env` and set at least these two:
-
-```ini
-DATABASE_URL=sqlite+aiosqlite:///./gymvision.db
-JWT_SECRET_KEY=<paste the output of the command below>
-```
-
-```bash
-python -c "import secrets; print(secrets.token_urlsafe(48))"
-```
-
 Then create the database and start the API:
 
 ```bash
-python -m app.cli bootstrap        # migrate + seed the 29 exercises and 36 foods
-python -m app.cli check            # shows what is and is not configured
 python -m uvicorn app.main:app --reload
 ```
 
@@ -163,21 +150,6 @@ motivates; it never decides.
 
 ---
 
-## Known limitations
-
-Recorded in full in [`PROJECT_STATUS.md`](PROJECT_STATUS.md). The ones that
-matter most:
-
-| Limitation | Effect |
-|---|---|
-| The schema has only been run against SQLite | Verify on PostgreSQL before deploying |
-| Live detector state is held in the API process | The frame endpoint is sticky to one server instance |
-| Conversation memory is in-process | Chat history is lost on restart |
-| Logout does not revoke a token | A token stays valid until it expires |
-| Four runtime engines are unbuilt | Blocked on a decision about where exercise thresholds live |
-| No diet API contract exists | The diet engine works but is not exposed |
-
----
 
 ## Safety
 
