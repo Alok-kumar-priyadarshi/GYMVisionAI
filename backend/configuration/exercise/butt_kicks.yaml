@@ -1,0 +1,29 @@
+# Butt Kicks
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0003
+version: 1.0.0
+slug: butt_kicks
+name: "Butt Kicks"
+category: "Warm-up"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Hamstrings"
+
+secondary_muscles:
+  - "Quadriceps"
+  - "Calves"
+
+instructions:
+  - "Stand tall with your feet hip-width apart."
+  - "Bend one knee and pull your heel towards your glutes."
+  - "Lower that foot and repeat with the opposite leg."
+  - "Keep your torso upright and your knees pointing towards the floor."

@@ -1,0 +1,30 @@
+# Plank
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0020
+version: 1.0.0
+slug: plank
+name: "Plank"
+category: "Core"
+difficulty: "Beginner"
+exercise_type: "Duration"
+movement_type: "Isolation"
+
+equipment:
+  - mat_optional
+
+primary_muscles:
+  - "Core"
+
+secondary_muscles:
+  - "Shoulders"
+  - "Glutes"
+  - "Lower back"
+
+instructions:
+  - "Rest on your forearms with your elbows directly beneath your shoulders."
+  - "Extend your legs and support your weight on your toes."
+  - "Hold a straight line from your head to your heels, without letting your hips sag or pike."
+  - "Brace your abdominals and breathe steadily for the duration of the hold."

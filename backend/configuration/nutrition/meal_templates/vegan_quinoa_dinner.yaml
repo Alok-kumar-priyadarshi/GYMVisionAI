@@ -1,0 +1,20 @@
+# Vegan Quinoa Dinner
+#
+# Meal template. References foods only; it never repeats nutrition data.
+# Schema: app/engines/nutrition/meal_template.py
+
+id: MT-0013
+version: 1.0.0
+name: "Vegan Quinoa Dinner"
+meal_type: "Dinner"
+diet_preference: "Vegan"
+
+goals:
+  - "Weight Loss"
+  - "Muscle Gain"
+  - "General Fitness"
+
+food_ids:
+  - FD-0005   # quinoa
+  - FD-0007   # chickpeas
+  - FD-0021   # spinach

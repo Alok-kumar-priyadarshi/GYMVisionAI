@@ -1,0 +1,19 @@
+# Fruit and Walnut Snack
+#
+# Meal template. References foods only; it never repeats nutrition data.
+# Schema: app/engines/nutrition/meal_template.py
+
+id: MT-0006
+version: 1.0.0
+name: "Fruit and Walnut Snack"
+meal_type: "Morning Snack"
+diet_preference: "Non Vegetarian"
+
+goals:
+  - "Weight Loss"
+  - "Muscle Gain"
+  - "General Fitness"
+
+food_ids:
+  - FD-0028   # apple
+  - FD-0033   # walnuts

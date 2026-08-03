@@ -1,0 +1,21 @@
+# Vegetarian Paneer Lunch
+#
+# Meal template. References foods only; it never repeats nutrition data.
+# Schema: app/engines/nutrition/meal_template.py
+
+id: MT-0008
+version: 1.0.0
+name: "Vegetarian Paneer Lunch"
+meal_type: "Lunch"
+diet_preference: "Vegetarian"
+
+goals:
+  - "Weight Loss"
+  - "Muscle Gain"
+  - "General Fitness"
+
+food_ids:
+  - FD-0003   # whole_wheat_roti
+  - FD-0018   # paneer
+  - FD-0021   # spinach
+  - FD-0019   # curd

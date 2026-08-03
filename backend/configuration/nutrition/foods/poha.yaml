@@ -1,0 +1,24 @@
+# Poha
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0006
+version: 1.0.0
+slug: poha
+name: "Poha"
+category: "Grain"
+
+calories: 130
+protein_g: 2.6
+carbohydrates_g: 28.0
+fat_g: 0.4
+serving_size: "100 g cooked"
+
+meal_types:
+  - "Breakfast"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

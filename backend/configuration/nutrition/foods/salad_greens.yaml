@@ -1,0 +1,25 @@
+# Mixed Salad Greens
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0022
+version: 1.0.0
+slug: salad_greens
+name: "Mixed Salad Greens"
+category: "Vegetable"
+
+calories: 20
+protein_g: 1.5
+carbohydrates_g: 3.5
+fat_g: 0.2
+serving_size: "100 g"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

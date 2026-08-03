@@ -1,0 +1,30 @@
+# Single-leg Glute Bridges
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0011
+version: 1.0.0
+slug: single_leg_glute_bridges
+name: "Single-leg Glute Bridges"
+category: "Lower Body"
+difficulty: "Intermediate"
+exercise_type: "Repetition"
+movement_type: "Isolation"
+
+equipment:
+  - mat_optional
+
+primary_muscles:
+  - "Glutes"
+
+secondary_muscles:
+  - "Hamstrings"
+  - "Core"
+  - "Lower back"
+
+instructions:
+  - "Lie on your back with one knee bent and that foot flat on the floor."
+  - "Extend the opposite leg straight out, keeping your thighs level with each other."
+  - "Drive through the planted heel to lift your hips into a straight line."
+  - "Lower under control, complete your repetitions, then switch legs."

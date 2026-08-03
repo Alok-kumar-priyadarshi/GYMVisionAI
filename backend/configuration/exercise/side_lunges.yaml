@@ -1,0 +1,31 @@
+# Side Lunges
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0009
+version: 1.0.0
+slug: side_lunges
+name: "Side Lunges"
+category: "Lower Body"
+difficulty: "Intermediate"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Quadriceps"
+  - "Glutes"
+  - "Adductors"
+
+secondary_muscles:
+  - "Hamstrings"
+  - "Core"
+
+instructions:
+  - "Stand with your feet together and your hands in front of your chest."
+  - "Take a wide step to one side and push your hips back as you bend that knee."
+  - "Keep the trailing leg straight and both feet flat on the floor."
+  - "Push off the bent leg to return to the centre, then alternate sides."

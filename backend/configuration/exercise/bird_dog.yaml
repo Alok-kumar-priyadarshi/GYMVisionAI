@@ -1,0 +1,30 @@
+# Bird Dog
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0025
+version: 1.0.0
+slug: bird_dog
+name: "Bird Dog"
+category: "Core"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - mat_optional
+
+primary_muscles:
+  - "Core"
+  - "Lower back"
+
+secondary_muscles:
+  - "Glutes"
+  - "Shoulders"
+
+instructions:
+  - "Start on all fours with your hands beneath your shoulders and your knees beneath your hips."
+  - "Brace your core and keep your spine neutral."
+  - "Extend one arm forward and the opposite leg back until both are level with your torso."
+  - "Return under control and alternate sides without rotating your hips."

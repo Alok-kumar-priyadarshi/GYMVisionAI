@@ -1,0 +1,19 @@
+# Vegan Light Evening Snack
+#
+# Meal template. References foods only; it never repeats nutrition data.
+# Schema: app/engines/nutrition/meal_template.py
+
+id: MT-0010
+version: 1.0.0
+name: "Vegan Light Evening Snack"
+meal_type: "Evening Snack"
+diet_preference: "Vegan"
+
+goals:
+  - "Weight Loss"
+  - "Muscle Gain"
+  - "General Fitness"
+
+food_ids:
+  - FD-0025   # cucumber
+  - FD-0032   # almonds

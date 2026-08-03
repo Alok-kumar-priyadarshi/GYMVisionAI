@@ -1,0 +1,23 @@
+# Grilled Fish
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0015
+version: 1.0.0
+slug: grilled_fish
+name: "Grilled Fish"
+category: "Protein"
+
+calories: 206
+protein_g: 22.0
+carbohydrates_g: 0.0
+fat_g: 12.0
+serving_size: "100 g"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Non Vegetarian"

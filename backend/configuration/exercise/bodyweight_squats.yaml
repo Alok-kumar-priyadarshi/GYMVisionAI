@@ -1,0 +1,31 @@
+# Bodyweight Squats
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0005
+version: 1.0.0
+slug: bodyweight_squats
+name: "Bodyweight Squats"
+category: "Lower Body"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Quadriceps"
+  - "Glutes"
+
+secondary_muscles:
+  - "Hamstrings"
+  - "Core"
+  - "Calves"
+
+instructions:
+  - "Stand with your feet shoulder-width apart and your toes turned slightly out."
+  - "Push your hips back and bend your knees to lower your body."
+  - "Descend until your thighs are at least parallel to the floor."
+  - "Drive through your heels to stand, keeping your knees tracking over your toes."

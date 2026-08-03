@@ -1,0 +1,23 @@
+# Boiled Eggs
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0014
+version: 1.0.0
+slug: boiled_eggs
+name: "Boiled Eggs"
+category: "Protein"
+
+calories: 155
+protein_g: 13.0
+carbohydrates_g: 1.1
+fat_g: 11.0
+serving_size: "100 g, about 2 eggs"
+
+meal_types:
+  - "Breakfast"
+  - "Evening Snack"
+
+diet_tags:
+  - "Non Vegetarian"

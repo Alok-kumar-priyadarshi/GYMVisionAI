@@ -1,0 +1,52 @@
+# Muscle Gain
+#
+# Workout generation template. Read-only at runtime.
+# Schema: app/engines/workout/workout_template.py
+#
+# More sets, fewer repetitions and longer rest favour strength adaptation.
+
+id: WO-0002
+version: 1.0.0
+goal: "Muscle Gain"
+name: "Strength Builder"
+
+seconds_per_repetition: 4
+allow_equipment: false
+
+muscle_emphasis:
+  - "Chest"
+  - "Triceps"
+  - "Shoulders"
+  - "Glutes"
+  - "Quadriceps"
+
+levels:
+  - fitness_level: "Beginner"
+    warm_up_exercises: 1
+    compound_exercises: 3
+    isolation_exercises: 2
+    core_exercises: 1
+    sets: 3
+    repetitions: 10
+    hold_seconds: 20
+    rest_seconds: 45
+
+  - fitness_level: "Intermediate"
+    warm_up_exercises: 1
+    compound_exercises: 4
+    isolation_exercises: 2
+    core_exercises: 2
+    sets: 4
+    repetitions: 10
+    hold_seconds: 30
+    rest_seconds: 60
+
+  - fitness_level: "Advanced"
+    warm_up_exercises: 1
+    compound_exercises: 5
+    isolation_exercises: 3
+    core_exercises: 2
+    sets: 4
+    repetitions: 12
+    hold_seconds: 45
+    rest_seconds: 75

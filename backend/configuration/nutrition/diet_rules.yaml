@@ -1,0 +1,68 @@
+# Diet Generation Rules
+#
+# Read-only at runtime.
+# Schema: app/engines/nutrition/diet_rules.py
+#
+# These values guide meal selection only. They are not medical advice and the
+# engine makes no medical claims.
+
+id: DR-0001
+version: 1.0.0
+
+# Multiplier converting resting energy into daily energy expenditure.
+# Fitness level is used as a proxy for habitual activity.
+activity_factors:
+  - fitness_level: "Beginner"
+    factor: 1.375
+  - fitness_level: "Intermediate"
+    factor: 1.55
+  - fitness_level: "Advanced"
+    factor: 1.725
+
+# Adjustment applied to daily energy expenditure for each goal.
+goal_adjustments:
+  - goal: "Weight Loss"
+    calorie_multiplier: 0.80
+  - goal: "Muscle Gain"
+    calorie_multiplier: 1.10
+  - goal: "General Fitness"
+    calorie_multiplier: 1.00
+
+# Share of the daily target allocated to each meal. Shares must total 1.0.
+meal_distribution:
+  - meal_type: "Breakfast"
+    display_order: 1
+    calorie_share: 0.25
+  - meal_type: "Morning Snack"
+    display_order: 2
+    calorie_share: 0.10
+  - meal_type: "Lunch"
+    display_order: 3
+    calorie_share: 0.30
+  - meal_type: "Evening Snack"
+    display_order: 4
+    calorie_share: 0.10
+  - meal_type: "Dinner"
+    display_order: 5
+    calorie_share: 0.25
+
+# Caps on calorie-dense categories, so scaling a meal towards its calorie
+# target cannot fill it with oil or nuts. Uncapped categories absorb the rest.
+category_serving_limits:
+  - category: "Fat and Oil"
+    maximum_servings: 0.15
+  - category: "Nut and Seed"
+    maximum_servings: 0.3
+
+# Suggested daily water intake.
+water_ml_per_kg: 35
+minimum_water_ml: 2000
+
+# Bounds preventing an extreme profile from producing an unsafe target.
+minimum_daily_calories: 1200
+maximum_daily_calories: 4000
+
+# Portions are snapped to practical amounts.
+serving_increment: 0.25
+minimum_servings: 0.25
+maximum_servings: 4.0

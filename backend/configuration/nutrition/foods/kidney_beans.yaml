@@ -1,0 +1,25 @@
+# Kidney Beans
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0009
+version: 1.0.0
+slug: kidney_beans
+name: "Kidney Beans"
+category: "Legume"
+
+calories: 127
+protein_g: 8.7
+carbohydrates_g: 22.8
+fat_g: 0.5
+serving_size: "100 g cooked"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

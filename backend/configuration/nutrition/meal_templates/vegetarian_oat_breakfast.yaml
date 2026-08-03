@@ -1,0 +1,21 @@
+# Vegetarian Oat Breakfast
+#
+# Meal template. References foods only; it never repeats nutrition data.
+# Schema: app/engines/nutrition/meal_template.py
+
+id: MT-0002
+version: 1.0.0
+name: "Vegetarian Oat Breakfast"
+meal_type: "Breakfast"
+diet_preference: "Vegetarian"
+
+goals:
+  - "Weight Loss"
+  - "Muscle Gain"
+  - "General Fitness"
+
+food_ids:
+  - FD-0001   # rolled_oats
+  - FD-0017   # toned_milk
+  - FD-0027   # banana
+  - FD-0016   # greek_yogurt

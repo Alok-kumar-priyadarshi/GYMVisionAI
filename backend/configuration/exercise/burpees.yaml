@@ -1,0 +1,33 @@
+# Burpees
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0029
+version: 1.0.0
+slug: burpees
+name: "Burpees"
+category: "Full Body"
+difficulty: "Advanced"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Quadriceps"
+  - "Chest"
+  - "Core"
+
+secondary_muscles:
+  - "Shoulders"
+  - "Triceps"
+  - "Glutes"
+  - "Hamstrings"
+
+instructions:
+  - "Stand tall with your feet shoulder-width apart."
+  - "Squat down, place your hands on the floor and jump your feet back into a plank."
+  - "Perform a push-up, then jump your feet back towards your hands."
+  - "Drive up into a jump with your arms overhead and land softly."

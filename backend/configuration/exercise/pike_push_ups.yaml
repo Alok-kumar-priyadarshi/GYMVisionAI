@@ -1,0 +1,30 @@
+# Pike Push-ups
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0018
+version: 1.0.0
+slug: pike_push_ups
+name: "Pike Push-ups"
+category: "Upper Body"
+difficulty: "Advanced"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - mat_optional
+
+primary_muscles:
+  - "Shoulders"
+  - "Triceps"
+
+secondary_muscles:
+  - "Chest"
+  - "Core"
+
+instructions:
+  - "Start in a high plank and walk your feet in to lift your hips into an inverted V."
+  - "Keep your legs as straight as your flexibility allows and look between your hands."
+  - "Bend your elbows to lower the top of your head towards the floor."
+  - "Press back up until your arms are straight, keeping your hips high."

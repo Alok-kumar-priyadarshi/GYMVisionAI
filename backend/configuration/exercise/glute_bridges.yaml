@@ -1,0 +1,30 @@
+# Glute Bridges
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0010
+version: 1.0.0
+slug: glute_bridges
+name: "Glute Bridges"
+category: "Lower Body"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Isolation"
+
+equipment:
+  - mat_optional
+
+primary_muscles:
+  - "Glutes"
+
+secondary_muscles:
+  - "Hamstrings"
+  - "Core"
+  - "Lower back"
+
+instructions:
+  - "Lie on your back with your knees bent and your feet flat, hip-width apart."
+  - "Rest your arms alongside your body with your palms facing down."
+  - "Squeeze your glutes and lift your hips until your body forms a straight line from shoulders to knees."
+  - "Lower your hips under control without letting them rest fully on the floor."

@@ -1,0 +1,30 @@
+# Knee Push-ups
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0016
+version: 1.0.0
+slug: knee_push_ups
+name: "Knee Push-ups"
+category: "Upper Body"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - mat_optional
+
+primary_muscles:
+  - "Chest"
+  - "Triceps"
+
+secondary_muscles:
+  - "Shoulders"
+  - "Core"
+
+instructions:
+  - "Kneel down and place your hands slightly wider than your shoulders."
+  - "Hold a straight line from your head to your knees."
+  - "Bend your elbows to lower your chest towards the floor."
+  - "Press back up until your arms are straight."

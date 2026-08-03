@@ -1,0 +1,25 @@
+# Orange
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0029
+version: 1.0.0
+slug: orange
+name: "Orange"
+category: "Fruit"
+
+calories: 47
+protein_g: 0.9
+carbohydrates_g: 11.8
+fat_g: 0.1
+serving_size: "100 g"
+
+meal_types:
+  - "Morning Snack"
+  - "Evening Snack"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

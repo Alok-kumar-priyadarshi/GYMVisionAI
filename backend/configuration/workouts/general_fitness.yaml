@@ -1,0 +1,51 @@
+# General Fitness
+#
+# Workout generation template. Read-only at runtime.
+# Schema: app/engines/workout/workout_template.py
+#
+# A balanced session covering every phase with moderate volume.
+
+id: WO-0003
+version: 1.0.0
+goal: "General Fitness"
+name: "Full Body Balance"
+
+seconds_per_repetition: 3
+allow_equipment: false
+
+muscle_emphasis:
+  - "Core"
+  - "Glutes"
+  - "Chest"
+  - "Hamstrings"
+
+levels:
+  - fitness_level: "Beginner"
+    warm_up_exercises: 2
+    compound_exercises: 2
+    isolation_exercises: 1
+    core_exercises: 2
+    sets: 2
+    repetitions: 12
+    hold_seconds: 20
+    rest_seconds: 45
+
+  - fitness_level: "Intermediate"
+    warm_up_exercises: 2
+    compound_exercises: 3
+    isolation_exercises: 2
+    core_exercises: 2
+    sets: 3
+    repetitions: 12
+    hold_seconds: 30
+    rest_seconds: 45
+
+  - fitness_level: "Advanced"
+    warm_up_exercises: 2
+    compound_exercises: 4
+    isolation_exercises: 2
+    core_exercises: 3
+    sets: 3
+    repetitions: 14
+    hold_seconds: 40
+    rest_seconds: 40

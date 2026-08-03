@@ -1,0 +1,25 @@
+# Carrot
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0023
+version: 1.0.0
+slug: carrot
+name: "Carrot"
+category: "Vegetable"
+
+calories: 41
+protein_g: 0.9
+carbohydrates_g: 9.6
+fat_g: 0.2
+serving_size: "100 g"
+
+meal_types:
+  - "Morning Snack"
+  - "Lunch"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

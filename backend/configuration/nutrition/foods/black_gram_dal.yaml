@@ -1,0 +1,25 @@
+# Black Gram Dal
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0010
+version: 1.0.0
+slug: black_gram_dal
+name: "Black Gram Dal"
+category: "Legume"
+
+calories: 105
+protein_g: 7.0
+carbohydrates_g: 18.0
+fat_g: 0.4
+serving_size: "100 g cooked"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

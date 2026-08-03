@@ -1,0 +1,25 @@
+# Red Lentils
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0008
+version: 1.0.0
+slug: red_lentils
+name: "Red Lentils"
+category: "Legume"
+
+calories: 116
+protein_g: 9.0
+carbohydrates_g: 20.1
+fat_g: 0.4
+serving_size: "100 g cooked"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

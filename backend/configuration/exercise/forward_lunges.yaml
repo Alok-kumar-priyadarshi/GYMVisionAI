@@ -1,0 +1,31 @@
+# Forward Lunges
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0008
+version: 1.0.0
+slug: forward_lunges
+name: "Forward Lunges"
+category: "Lower Body"
+difficulty: "Intermediate"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Quadriceps"
+  - "Glutes"
+
+secondary_muscles:
+  - "Hamstrings"
+  - "Core"
+  - "Calves"
+
+instructions:
+  - "Stand tall with your feet hip-width apart."
+  - "Step one foot forward and lower your hips until both knees are bent to about ninety degrees."
+  - "Keep your front knee above your ankle and avoid letting it travel past your toes."
+  - "Push through your front heel to return to standing, then alternate legs."

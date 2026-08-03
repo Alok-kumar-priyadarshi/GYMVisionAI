@@ -1,0 +1,25 @@
+# Greek Yogurt
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0016
+version: 1.0.0
+slug: greek_yogurt
+name: "Greek Yogurt"
+category: "Dairy"
+
+calories: 59
+protein_g: 10.0
+carbohydrates_g: 3.6
+fat_g: 0.4
+serving_size: "100 g"
+
+meal_types:
+  - "Breakfast"
+  - "Morning Snack"
+  - "Evening Snack"
+
+diet_tags:
+  - "Vegetarian"
+  - "Non Vegetarian"

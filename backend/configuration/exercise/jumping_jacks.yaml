@@ -1,0 +1,31 @@
+# Jumping Jacks
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0001
+version: 1.0.0
+slug: jumping_jacks
+name: "Jumping Jacks"
+category: "Warm-up"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Calves"
+  - "Shoulders"
+
+secondary_muscles:
+  - "Quadriceps"
+  - "Hip abductors"
+  - "Core"
+
+instructions:
+  - "Stand upright with your feet together and your arms relaxed at your sides."
+  - "Jump both feet out to shoulder width while sweeping your arms overhead."
+  - "Jump your feet back together and lower your arms to your sides."
+  - "Keep a soft bend in your knees and land quietly on the balls of your feet."

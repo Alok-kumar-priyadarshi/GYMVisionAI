@@ -1,0 +1,29 @@
+# Triceps Dips
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0019
+version: 1.0.0
+slug: triceps_dips
+name: "Triceps Dips"
+category: "Upper Body"
+difficulty: "Intermediate"
+exercise_type: "Repetition"
+movement_type: "Isolation"
+
+equipment:
+  - chair
+
+primary_muscles:
+  - "Triceps"
+
+secondary_muscles:
+  - "Shoulders"
+  - "Chest"
+
+instructions:
+  - "Sit on the edge of a sturdy chair and grip the front edge beside your hips."
+  - "Slide your hips forward off the seat with your legs extended in front of you."
+  - "Bend your elbows straight back to lower your hips towards the floor."
+  - "Press through your palms to straighten your arms, keeping your shoulders down."

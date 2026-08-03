@@ -1,0 +1,24 @@
+# Toned Milk
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0017
+version: 1.0.0
+slug: toned_milk
+name: "Toned Milk"
+category: "Dairy"
+
+calories: 58
+protein_g: 3.2
+carbohydrates_g: 4.7
+fat_g: 3.0
+serving_size: "100 ml"
+
+meal_types:
+  - "Breakfast"
+  - "Evening Snack"
+
+diet_tags:
+  - "Vegetarian"
+  - "Non Vegetarian"

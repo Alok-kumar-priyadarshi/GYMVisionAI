@@ -1,0 +1,31 @@
+# Sumo Squats
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0006
+version: 1.0.0
+slug: sumo_squats
+name: "Sumo Squats"
+category: "Lower Body"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Glutes"
+  - "Adductors"
+
+secondary_muscles:
+  - "Quadriceps"
+  - "Hamstrings"
+  - "Core"
+
+instructions:
+  - "Stand with your feet well wider than shoulder width and your toes turned out."
+  - "Keep your chest tall and lower your hips straight down."
+  - "Descend until your thighs are parallel to the floor."
+  - "Push through your heels and squeeze your glutes to return to standing."

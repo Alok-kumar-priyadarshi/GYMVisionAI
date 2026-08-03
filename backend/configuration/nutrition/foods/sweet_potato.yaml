@@ -1,0 +1,25 @@
+# Sweet Potato
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0024
+version: 1.0.0
+slug: sweet_potato
+name: "Sweet Potato"
+category: "Vegetable"
+
+calories: 86
+protein_g: 1.6
+carbohydrates_g: 20.1
+fat_g: 0.1
+serving_size: "100 g boiled"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

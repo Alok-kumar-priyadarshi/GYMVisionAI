@@ -1,0 +1,25 @@
+# Apple
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0028
+version: 1.0.0
+slug: apple
+name: "Apple"
+category: "Fruit"
+
+calories: 52
+protein_g: 0.3
+carbohydrates_g: 13.8
+fat_g: 0.2
+serving_size: "100 g, about 1 small"
+
+meal_types:
+  - "Morning Snack"
+  - "Evening Snack"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

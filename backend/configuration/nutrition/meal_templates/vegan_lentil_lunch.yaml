@@ -1,0 +1,21 @@
+# Vegan Lentil Lunch
+#
+# Meal template. References foods only; it never repeats nutrition data.
+# Schema: app/engines/nutrition/meal_template.py
+
+id: MT-0007
+version: 1.0.0
+name: "Vegan Lentil Lunch"
+meal_type: "Lunch"
+diet_preference: "Vegan"
+
+goals:
+  - "Weight Loss"
+  - "Muscle Gain"
+  - "General Fitness"
+
+food_ids:
+  - FD-0002   # brown_rice
+  - FD-0008   # red_lentils
+  - FD-0020   # broccoli
+  - FD-0036   # olive_oil

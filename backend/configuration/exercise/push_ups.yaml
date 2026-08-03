@@ -1,0 +1,30 @@
+# Push-ups
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0015
+version: 1.0.0
+slug: push_ups
+name: "Push-ups"
+category: "Upper Body"
+difficulty: "Intermediate"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Chest"
+  - "Triceps"
+
+secondary_muscles:
+  - "Shoulders"
+  - "Core"
+
+instructions:
+  - "Start in a high plank with your hands slightly wider than your shoulders."
+  - "Hold a straight line from your head to your heels and brace your core."
+  - "Bend your elbows to lower your chest towards the floor."
+  - "Press back up until your arms are straight, keeping your elbows close to your body."

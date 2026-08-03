@@ -1,0 +1,20 @@
+# High Protein Egg Breakfast
+#
+# Meal template. References foods only; it never repeats nutrition data.
+# Schema: app/engines/nutrition/meal_template.py
+
+id: MT-0003
+version: 1.0.0
+name: "High Protein Egg Breakfast"
+meal_type: "Breakfast"
+diet_preference: "Non Vegetarian"
+
+goals:
+  - "Weight Loss"
+  - "Muscle Gain"
+  - "General Fitness"
+
+food_ids:
+  - FD-0004   # whole_wheat_bread
+  - FD-0014   # boiled_eggs
+  - FD-0027   # banana

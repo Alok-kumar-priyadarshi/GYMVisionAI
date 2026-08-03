@@ -1,0 +1,25 @@
+# Chia Seeds
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0035
+version: 1.0.0
+slug: chia_seeds
+name: "Chia Seeds"
+category: "Nut and Seed"
+
+calories: 486
+protein_g: 16.5
+carbohydrates_g: 42.1
+fat_g: 30.7
+serving_size: "100 g"
+
+meal_types:
+  - "Breakfast"
+  - "Morning Snack"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

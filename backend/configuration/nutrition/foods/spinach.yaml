@@ -1,0 +1,25 @@
+# Spinach
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0021
+version: 1.0.0
+slug: spinach
+name: "Spinach"
+category: "Vegetable"
+
+calories: 23
+protein_g: 2.9
+carbohydrates_g: 3.6
+fat_g: 0.4
+serving_size: "100 g cooked"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

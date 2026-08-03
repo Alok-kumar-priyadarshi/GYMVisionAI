@@ -1,0 +1,28 @@
+# Calf Raises
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0013
+version: 1.0.0
+slug: calf_raises
+name: "Calf Raises"
+category: "Lower Body"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Isolation"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Calves"
+
+secondary_muscles:
+  - "Ankle stabilisers"
+
+instructions:
+  - "Stand tall with your feet hip-width apart."
+  - "Press through the balls of your feet to lift your heels as high as you can."
+  - "Pause briefly at the top and keep your ankles from rolling outwards."
+  - "Lower your heels slowly back to the floor."

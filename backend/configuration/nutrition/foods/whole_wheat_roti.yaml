@@ -1,0 +1,25 @@
+# Whole Wheat Roti
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0003
+version: 1.0.0
+slug: whole_wheat_roti
+name: "Whole Wheat Roti"
+category: "Grain"
+
+calories: 297
+protein_g: 11.0
+carbohydrates_g: 58.0
+fat_g: 3.7
+serving_size: "100 g"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

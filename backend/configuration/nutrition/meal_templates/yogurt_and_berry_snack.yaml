@@ -1,0 +1,19 @@
+# Yogurt and Berry Snack
+#
+# Meal template. References foods only; it never repeats nutrition data.
+# Schema: app/engines/nutrition/meal_template.py
+
+id: MT-0005
+version: 1.0.0
+name: "Yogurt and Berry Snack"
+meal_type: "Morning Snack"
+diet_preference: "Vegetarian"
+
+goals:
+  - "Weight Loss"
+  - "Muscle Gain"
+  - "General Fitness"
+
+food_ids:
+  - FD-0016   # greek_yogurt
+  - FD-0031   # mixed_berries

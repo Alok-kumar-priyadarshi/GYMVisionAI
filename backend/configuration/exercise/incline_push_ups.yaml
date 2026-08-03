@@ -1,0 +1,30 @@
+# Incline Push-ups
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0017
+version: 1.0.0
+slug: incline_push_ups
+name: "Incline Push-ups"
+category: "Upper Body"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - wall
+
+primary_muscles:
+  - "Chest"
+  - "Triceps"
+
+secondary_muscles:
+  - "Shoulders"
+  - "Core"
+
+instructions:
+  - "Place your hands slightly wider than your shoulders on a wall or sturdy counter."
+  - "Step your feet back so your body forms a straight line on an incline."
+  - "Bend your elbows to lower your chest towards the surface."
+  - "Press back up until your arms are straight. A higher surface makes the exercise easier."

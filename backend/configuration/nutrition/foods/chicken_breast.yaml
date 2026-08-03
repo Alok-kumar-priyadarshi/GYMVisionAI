@@ -1,0 +1,23 @@
+# Chicken Breast
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0013
+version: 1.0.0
+slug: chicken_breast
+name: "Chicken Breast"
+category: "Protein"
+
+calories: 165
+protein_g: 31.0
+carbohydrates_g: 0.0
+fat_g: 3.6
+serving_size: "100 g grilled"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Non Vegetarian"

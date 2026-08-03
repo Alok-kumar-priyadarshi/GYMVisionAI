@@ -1,0 +1,24 @@
+# Paneer
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0018
+version: 1.0.0
+slug: paneer
+name: "Paneer"
+category: "Dairy"
+
+calories: 265
+protein_g: 18.3
+carbohydrates_g: 1.2
+fat_g: 20.8
+serving_size: "100 g"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegetarian"
+  - "Non Vegetarian"

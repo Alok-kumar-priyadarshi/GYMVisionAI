@@ -1,0 +1,29 @@
+# Dead Bug
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0024
+version: 1.0.0
+slug: dead_bug
+name: "Dead Bug"
+category: "Core"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - mat_optional
+
+primary_muscles:
+  - "Core"
+
+secondary_muscles:
+  - "Hip flexors"
+  - "Shoulders"
+
+instructions:
+  - "Lie on your back with your arms extended towards the ceiling and your knees above your hips."
+  - "Press your lower back gently into the floor."
+  - "Slowly lower one arm overhead and the opposite leg towards the floor."
+  - "Return to the start under control and alternate sides."

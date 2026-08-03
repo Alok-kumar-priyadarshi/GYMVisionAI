@@ -1,0 +1,25 @@
+# Chickpeas
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0007
+version: 1.0.0
+slug: chickpeas
+name: "Chickpeas"
+category: "Legume"
+
+calories: 164
+protein_g: 8.9
+carbohydrates_g: 27.4
+fat_g: 2.6
+serving_size: "100 g cooked"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

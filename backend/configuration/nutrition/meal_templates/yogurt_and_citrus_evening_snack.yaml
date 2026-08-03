@@ -1,0 +1,19 @@
+# Yogurt and Citrus Evening Snack
+#
+# Meal template. References foods only; it never repeats nutrition data.
+# Schema: app/engines/nutrition/meal_template.py
+
+id: MT-0012
+version: 1.0.0
+name: "Yogurt and Citrus Evening Snack"
+meal_type: "Evening Snack"
+diet_preference: "Non Vegetarian"
+
+goals:
+  - "Weight Loss"
+  - "Muscle Gain"
+  - "General Fitness"
+
+food_ids:
+  - FD-0016   # greek_yogurt
+  - FD-0029   # orange

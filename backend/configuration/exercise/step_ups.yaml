@@ -1,0 +1,31 @@
+# Step-ups
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0014
+version: 1.0.0
+slug: step_ups
+name: "Step-ups"
+category: "Lower Body"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - step
+
+primary_muscles:
+  - "Quadriceps"
+  - "Glutes"
+
+secondary_muscles:
+  - "Hamstrings"
+  - "Calves"
+  - "Core"
+
+instructions:
+  - "Stand facing a stable step or low bench."
+  - "Place one whole foot on the step and drive through that heel to stand up."
+  - "Keep your chest tall and avoid pushing off with the trailing foot."
+  - "Step down under control and alternate the leading leg."

@@ -1,0 +1,21 @@
+# Grilled Chicken Lunch
+#
+# Meal template. References foods only; it never repeats nutrition data.
+# Schema: app/engines/nutrition/meal_template.py
+
+id: MT-0009
+version: 1.0.0
+name: "Grilled Chicken Lunch"
+meal_type: "Lunch"
+diet_preference: "Non Vegetarian"
+
+goals:
+  - "Weight Loss"
+  - "Muscle Gain"
+  - "General Fitness"
+
+food_ids:
+  - FD-0002   # brown_rice
+  - FD-0013   # chicken_breast
+  - FD-0022   # salad_greens
+  - FD-0036   # olive_oil

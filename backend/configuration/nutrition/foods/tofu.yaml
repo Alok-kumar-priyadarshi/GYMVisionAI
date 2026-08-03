@@ -1,0 +1,25 @@
+# Tofu
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0011
+version: 1.0.0
+slug: tofu
+name: "Tofu"
+category: "Protein"
+
+calories: 76
+protein_g: 8.0
+carbohydrates_g: 1.9
+fat_g: 4.8
+serving_size: "100 g"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

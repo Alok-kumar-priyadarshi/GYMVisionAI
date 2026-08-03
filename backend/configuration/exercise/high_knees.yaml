@@ -1,0 +1,30 @@
+# High Knees
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0002
+version: 1.0.0
+slug: high_knees
+name: "High Knees"
+category: "Warm-up"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Compound"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Hip flexors"
+  - "Quadriceps"
+
+secondary_muscles:
+  - "Calves"
+  - "Core"
+
+instructions:
+  - "Stand tall with your feet hip-width apart and your arms bent at your sides."
+  - "Drive one knee up until your thigh is parallel to the floor."
+  - "Lower that foot and immediately drive the opposite knee up."
+  - "Stay tall through your chest and avoid leaning back."

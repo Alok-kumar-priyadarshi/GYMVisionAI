@@ -1,0 +1,29 @@
+# Hip Circles
+#
+# Exercise configuration. Read-only at runtime.
+# Schema: app/engines/exercise/catalog/exercise_definition.py
+
+id: EX-0004
+version: 1.0.0
+slug: hip_circles
+name: "Hip Circles"
+category: "Warm-up"
+difficulty: "Beginner"
+exercise_type: "Repetition"
+movement_type: "Isolation"
+
+equipment:
+  - none
+
+primary_muscles:
+  - "Hip flexors"
+
+secondary_muscles:
+  - "Core"
+  - "Lower back"
+
+instructions:
+  - "Stand with your feet shoulder-width apart and your hands on your hips."
+  - "Push your hips forward, then rotate them towards one side."
+  - "Continue the rotation backwards and around to complete a full circle."
+  - "Keep your feet planted and your upper body relatively still."

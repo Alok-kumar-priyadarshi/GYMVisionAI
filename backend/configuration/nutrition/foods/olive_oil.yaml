@@ -1,0 +1,25 @@
+# Olive Oil
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0036
+version: 1.0.0
+slug: olive_oil
+name: "Olive Oil"
+category: "Fat and Oil"
+
+calories: 884
+protein_g: 0.0
+carbohydrates_g: 0.0
+fat_g: 100.0
+serving_size: "100 ml"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

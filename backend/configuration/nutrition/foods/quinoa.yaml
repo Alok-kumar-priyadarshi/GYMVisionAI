@@ -1,0 +1,25 @@
+# Quinoa
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0005
+version: 1.0.0
+slug: quinoa
+name: "Quinoa"
+category: "Grain"
+
+calories: 120
+protein_g: 4.4
+carbohydrates_g: 21.3
+fat_g: 1.9
+serving_size: "100 g cooked"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

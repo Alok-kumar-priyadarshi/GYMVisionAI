@@ -1,0 +1,24 @@
+# Rolled Oats
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0001
+version: 1.0.0
+slug: rolled_oats
+name: "Rolled Oats"
+category: "Grain"
+
+calories: 389
+protein_g: 16.9
+carbohydrates_g: 66.3
+fat_g: 6.9
+serving_size: "100 g dry"
+
+meal_types:
+  - "Breakfast"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"

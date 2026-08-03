@@ -1,0 +1,25 @@
+# Brown Rice
+#
+# Food configuration. Read-only at runtime.
+# Schema: app/engines/nutrition/food_definition.py
+
+id: FD-0002
+version: 1.0.0
+slug: brown_rice
+name: "Brown Rice"
+category: "Grain"
+
+calories: 123
+protein_g: 2.7
+carbohydrates_g: 25.6
+fat_g: 1.0
+serving_size: "100 g cooked"
+
+meal_types:
+  - "Lunch"
+  - "Dinner"
+
+diet_tags:
+  - "Vegan"
+  - "Vegetarian"
+  - "Non Vegetarian"
