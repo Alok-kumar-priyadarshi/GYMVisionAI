@@ -1,0 +1,73 @@
+# Render blueprint for the GymVision AI backend.
+#
+# The frontend is deployed separately on Vercel, which serves only static files
+# and so cannot run FastAPI. This hosts the API at a public HTTPS URL that the
+# deployed frontend can actually reach.
+#
+# Create from the Render dashboard: Blueprints -> New Blueprint Instance, then
+# point it at this repository. The three secrets marked `sync: false` are not
+# stored here; Render prompts for them.
+
+databases:
+  - name: gymvision-db
+    databaseName: gymvision
+    plan: free
+    region: singapore
+
+services:
+  - type: web
+    name: gymvision-api
+    runtime: python
+    plan: free
+    region: singapore
+    # The backend is a subdirectory of this repository, so every command below
+    # runs from `backend/` rather than the repository root.
+    rootDir: backend
+
+    buildCommand: pip install -r requirements.txt
+
+    # Migrations run here rather than at build time because the build has no
+    # guaranteed access to the database. `alembic upgrade head` matches on the
+    # revision table, so re-running it on every restart is a no-op.
+    startCommand: alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+
+    # `/live` answers without touching the database, so a database that is still
+    # starting cannot make Render judge the service itself unhealthy.
+    healthCheckPath: /live
+
+    envVars:
+      # Production refuses to start with any secret missing, which is what makes
+      # a misconfigured deployment fail loudly at boot instead of at first login.
+      - key: ENVIRONMENT
+        value: production
+
+      - key: PYTHON_VERSION
+        value: "3.12"
+
+      # Render hands out a `postgres://` URL. The settings validator rewrites it
+      # to the asyncpg driver, so it is passed through untouched.
+      - key: DATABASE_URL
+        fromDatabase:
+          name: gymvision-db
+          property: connectionString
+
+      # A 256-bit generated value, comfortably above the 32-character minimum
+      # the HS256 signing key is checked against.
+      - key: JWT_SECRET_KEY
+        generateValue: true
+
+      # Read as a comma-separated list. This must name the exact origin the
+      # browser sends, or sign-in fails CORS with the API otherwise healthy.
+      - key: CORS_ORIGINS
+        value: https://gym-vision-ai-ten.vercel.app
+
+      - key: JSON_LOGS
+        value: "true"
+
+      # Prompted for on first deploy, never committed.
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
