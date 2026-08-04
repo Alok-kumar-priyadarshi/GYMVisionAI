@@ -16,7 +16,9 @@ databases:
 
 services:
   - type: web
-    name: gymvision-api
+    # Must match the deployed service: Render derives the public hostname from
+    # this name, and the frontend proxies /api to it in frontend/vercel.json.
+    name: gymvisionai
     runtime: python
     plan: free
     region: singapore
