@@ -31,6 +31,7 @@ declare global {
           initialize: (config: {
             client_id: string;
             callback: (response: GoogleCredentialResponse) => void;
+            use_fedcm_for_button?: boolean;
           }) => void;
           renderButton: (
             parent: HTMLElement,
@@ -151,6 +152,12 @@ export default function LoginPage() {
         window.google!.accounts.id.initialize({
           client_id: GOOGLE_CLIENT_ID,
           callback: (response) => void handleCredential(response),
+          // Ask Chrome to run the sign-in flow itself rather than having
+          // Google's script call `window.open`. The popup was being blocked in
+          // the browser, so the click produced only a console error and no
+          // visible response. FedCM has no popup to block, and browsers without
+          // support fall back to the old flow on their own.
+          use_fedcm_for_button: true,
         });
         window.google!.accounts.id.renderButton(buttonRef.current, {
           theme: "outline",
@@ -239,10 +246,37 @@ export default function LoginPage() {
         <p className="mt-6 text-center text-xs text-ink-muted">
           GymVision gives educational fitness guidance. It is not medical advice.
         </p>
+
+        {/*
+          Google reports an unknown origin only to the browser console, which
+          leaves the page looking like it simply does nothing. Repeating both
+          values it checks against turns that into a fix that can be applied
+          without opening devtools. Collapsed, because it is only of interest
+          when sign-in is already failing.
+        */}
+        {GOOGLE_CLIENT_ID && (
+          <details className="mt-4 text-xs text-ink-muted">
+            <summary className="cursor-pointer text-center">
+              Sign-in not working?
+            </summary>
+            <div className="mt-3 rounded-card border border-line bg-white p-4">
+              <p>
+                Google refuses sign-in from an origin it has not been told
+                about. Add this origin to the OAuth client&apos;s{" "}
+                <span className="text-ink">Authorized JavaScript origins</span>{" "}
+                in the Google Cloud console:
+              </p>
+              <p className="mt-2 break-all rounded bg-surface-muted px-2 py-1 font-mono text-ink">
+                {window.location.origin}
+              </p>
+              <p className="mt-3">This page is using client ID:</p>
+              <p className="mt-2 break-all rounded bg-surface-muted px-2 py-1 font-mono text-ink">
+                {GOOGLE_CLIENT_ID}
+              </p>
+            </div>
+          </details>
+        )}
       </div>
-
-
-
     </main>
   );
 }
