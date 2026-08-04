@@ -6,6 +6,37 @@ repetitions, checks your form, builds your workouts and answers your questions.
 Everything runs on free tiers. No gym equipment is required for any of the 29
 supported exercises.
 
+[🚀 Frontend](https://gym-vision-ai-ten.vercel.app)
+<br><br>
+[🗿 Backend](https://gymvisionai.onrender.com)
+
+
+---
+<p align="center">Workout section</p>
+
+![Workout section](images\image1.png)
+
+<p align="center">Exercise section</p>
+
+![Exercise section](images\image2.png)
+
+<p align="center">Diet section</p>
+
+![Diet section](images\image3.png)
+
+<p align="center">Progress section</p>
+
+![Progress section](images\image4.png)
+
+<p align="center">Coach section</p>
+
+![Coach section](images\image6.png)
+
+<p align="center">Profile section</p>
+
+![Profile section](images\image5.png)
+---
+
 ---
 
 ## What it does
