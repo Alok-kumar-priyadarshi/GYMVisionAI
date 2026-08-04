@@ -14,27 +14,27 @@ supported exercises.
 ---
 <p align="center">Workout section</p>
 
-![Workout section](images\image1.png)
+![Workout section](images/image1.png)
 
 <p align="center">Exercise section</p>
 
-![Exercise section](images\image2.png)
+![Exercise section](images/image2.png)
 
 <p align="center">Diet section</p>
 
-![Diet section](images\image3.png)
+![Diet section](images/image3.png)
 
 <p align="center">Progress section</p>
 
-![Progress section](images\image4.png)
+![Progress section](images/image4.png)
 
 <p align="center">Coach section</p>
 
-![Coach section](images\image6.png)
+![Coach section](images/image6.png)
 
 <p align="center">Profile section</p>
 
-![Profile section](images\image5.png)
+![Profile section](images/image5.png)
 ---
 
 ---
